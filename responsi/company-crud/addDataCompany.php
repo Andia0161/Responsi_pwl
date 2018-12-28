@@ -1,35 +1,27 @@
 <?php
-	include "cons.php";
-
-  $id = $_POST['id'];
+include "../cons.php";
 	$companyname = $_POST['companyname'];
 
 
-
-     if (isset($_POST['submit'])) {
-
-     	
-     	$query = "UPDATE company SET name = '".$companyname."' WHERE idcompany ='".$id."'";
-
+if (isset($_POST['submit'])) {
+     	$query = "INSERT INTO company (name) VALUES ('".$companyname."')";
      	$sql = mysqli_query($kon,$query);
-      
+
      	if ($sql) {
      		?>
               <script>
-                alert('Data berhasil diedit');
+                alert('Data berhasil disimpan');
                 window.open('company.php','_SELF');
               </script>
             <?php
           }else{
             ?>
               <script>
-                alert('Data Gagal diedit');
-                window.open('editCompany.php','_SELF');
+                alert('Data Gagal disimpan');
+                window.open('addCompany.php','_SELF');
               </script>
             <?php
           }
    
      }
 
-
-?>

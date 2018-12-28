@@ -1,35 +1,27 @@
 <?php
-	include "cons.php";
-
-  $id = $_POST['id'];
+include "../cons.php";
 	$cityname = $_POST['cityname'];
 	$countryname = $_POST['countryname'];
 
-
-     if (isset($_POST['submit'])) {
-
-     	
-     	$query = "UPDATE city SET cityname = '".$cityname."', country = '".$countryname."' WHERE idcity ='".$id."'";
-
+if (isset($_POST['submit'])) {
+     	$query = "INSERT INTO city (cityname,country) VALUES ('".$cityname."','".$countryname."')";
      	$sql = mysqli_query($kon,$query);
-      
+
      	if ($sql) {
      		?>
               <script>
-                alert('Data berhasil diedit');
+                alert('Data berhasil disimpan');
                 window.open('city.php','_SELF');
               </script>
             <?php
           }else{
             ?>
               <script>
-                alert('Data Gagal diedit');
-                window.open('city.php','_SELF');
+                alert('Data Gagal disimpan');
+                window.open('addDataCity.php','_SELF');
               </script>
             <?php
           }
    
      }
 
-
-?>

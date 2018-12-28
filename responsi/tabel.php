@@ -12,17 +12,17 @@
 				<label style="font-size: 28px;margin-left: 15px">Data Members</label>
 			<div class="panel panel-body">
 				<!-- crud for city -->
-				<a href="addCity.php">
+				<a href="city-crud/addCity.php">
 					<button type="button" class="btn btn-info">1. CRUD City</button>
 				</a>
 
 				<!-- crud for company -->
-				<a href="addCompany">
+				<a href="company-crud/addCompany">
 					<button type="button" class="btn btn-info">2. CRUD Company</button>
 				</a>
 					
 
-				<a href="addData.php">
+				<a href="member-crud/addData.php">
 				<button type="button" class="btn btn-success">Add Data</button>
 				
 				<div class="col-md-6" style="right: ">
@@ -44,9 +44,7 @@
 							<th>Email</th>
 							<th>Company</th>
 							<th>City</th>
-							<th></th>
-							<th></th>
-							<th></th>
+							<th colspan="3">Action</th>
 						</tr>
 
 						<?php
@@ -64,13 +62,11 @@
 								<td><?php echo $row["companyName"]; ?></td>
 								<td><?php echo $row["cityName"]; ?></td>
 								<td>
-									 <a href="edit.php?id=<?php echo $row['idMember'] ?>" title="edit" class="btn btn-warning">Edit</a>
-								</td>
-								<td>
-									<a href="detail.php?id=<?php echo $row['idMember'] ?>" title="Detail" class="btn btn-info">Detail</a>
-								</td>
-								<td>
-									<a href="delete.php?id=<?php echo $row['idMember'] ?>" title="delete" class="btn btn-danger">Delete</a>
+									 <a href="member-crud/edit.php?id=<?php echo $row['idMember'] ?>" title="edit" class="btn btn-warning">Edit</a>
+								
+									<a href="member-crud/detail.php?id=<?php echo $row['idMember'] ?>" title="Detail" class="btn btn-info">Detail</a>
+								
+									<a href="member-crud/delete.php?id=<?php echo $row['idMember'] ?>" title="delete" class="btn btn-danger">Delete</a>
 								</td>
 							</tr>
 								<?php

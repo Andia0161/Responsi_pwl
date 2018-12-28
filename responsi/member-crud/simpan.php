@@ -1,5 +1,5 @@
 <?php
-  include "cons.php";
+  include "../cons.php";
 
   $id = $_POST['id'];
   $nama = $_POST['nama'];

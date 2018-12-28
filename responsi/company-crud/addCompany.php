@@ -4,8 +4,8 @@
 	<title>Add Company</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-	<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
+	<script type="text/javascript" src="../../assets/js/jquery.js"></script>
 <body>
 	<div class="container" style="width: 50%;margin-top: 50px">
 		<div class="panel panel-default">
