@@ -1,7 +1,7 @@
 <?php
 	include "cons.php";
 	$id = $_GET['id'];
-	$query = "DELETE FROM company WHERE idcompany = '".$id."' ";
+	$query = "DELETE FROM company WHERE idcompany = $id ";
 	$sql = mysqli_query($kon,$query);
 	if ($sql) {
 		?>
