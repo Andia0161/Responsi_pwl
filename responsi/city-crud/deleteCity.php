@@ -1,5 +1,5 @@
 <?php
-	include "cons.php";
+	include "../cons.php";
 	$id = $_GET['id'];
 	$query = "DELETE FROM city WHERE idcity = '".$id."' ";
 	$sql = mysqli_query($kon,$query);

@@ -1,5 +1,5 @@
 <?php
-	include "cons.php";
+	include "../cons.php";
 	$nama = $_POST['nama'];
 	$email = $_POST['email'];
 	$company = $_POST['company'];

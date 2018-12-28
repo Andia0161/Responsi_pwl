@@ -5,11 +5,11 @@
 </head>
 <meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-	<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
+	<script type="text/javascript" src="../../assets/js/jquery.js"></script>
 
 <?php
-	include "cons.php";
+	include "../cons.php";
 	$id = $_GET['id'];
 	$query = "SELECT co.idcompany, co.name as companyName, m.id as idMember, m.idcompany, m.idcity, m.fullname as fullname, m.email as email, m.address as address, m.foto as foto, ci.idcity, ci.cityname as cityName, ci.country as country FROM company co JOIN members m ON co.idcompany=m.idcompany JOIN city ci ON m.idcity=ci.idcity WHERE m.id='".$id."'";
 	$sql = mysqli_query($kon,$query);
@@ -45,7 +45,7 @@
 							</tr>
 						</table>
 				</div>
-				<a href="tabel.php" title="kembali" class="btn btn-warning">Kembali</a>
+				<a href="../tabel.php" title="kembali" class="btn btn-warning">Kembali</a>
 			</div>
 		</div>
 		

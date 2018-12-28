@@ -4,11 +4,11 @@
 	<title>Edit Company</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-	<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
+	<script type="text/javascript" src="../../assets/js/jquery.js"></script>
 <body>
 <?php
-	include "cons.php";
+	include "../cons.php";
 	$id = $_GET['id'];
 	$query = "SELECT * FROM company WHERE idcompany='".$id."'";
 	$sql = mysqli_query($kon,$query);

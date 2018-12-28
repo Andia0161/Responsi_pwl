@@ -4,15 +4,15 @@
 	<title>Company</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-	<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
+	<script type="text/javascript" src="../../assets/js/jquery.js"></script>
 <body>
 	<div class="container">
 		<div class="panel panel-default" style="margin-top: 100px">
 				<label style="font-size: 28px;margin-left: 15px">Data Members</label>
 			<div class="panel panel-body">
-				<a href="tabel.php" class="btn btn-info">1. CRUD Members</a>
-				<a href="city.php" class="btn btn-info">2. CRUD City</a>
+				<a href="../tabel.php" class="btn btn-info">1. CRUD Members</a>
+				<a href="../city-crud/city.php" class="btn btn-info">2. CRUD City</a>
 				<a href="company.php" class="btn btn-info">3. CRUD Company</a>
 
 				<a href="addCompany.php" class="btn btn-success">Add Data</a>
@@ -28,7 +28,7 @@
 						</tr>
 
 						<?php
-							include "cons.php";
+							include "../cons.php";
 							$query = "SELECT * FROM company";
 							$sql = mysqli_query($kon,$query);
 							$no=0;
