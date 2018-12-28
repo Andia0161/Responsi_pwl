@@ -11,13 +11,20 @@
 		<div class="panel panel-default" style="margin-top: 100px">
 				<label style="font-size: 28px;margin-left: 15px">Data Members</label>
 			<div class="panel panel-body">
+				<!-- crud for city -->
+				<a href="addCity.php">
+					<button type="button" class="btn btn-info">1. CRUD City</button>
+				</a>
 
-				<button type="button" class="btn btn-info">1. CRUD City</button>
-				<button type="button" class="btn btn-info">2. CRUD Company</button>
+				<!-- crud for company -->
+				<a href="addCompany">
+					<button type="button" class="btn btn-info">2. CRUD Company</button>
+				</a>
+					
 
 				<a href="addData.php">
 				<button type="button" class="btn btn-success">Add Data</button>
-				</a>
+				
 				<div class="col-md-6" style="right: ">
 		<form action="" method="post" enctype="multipart/form-data" class="form-inline">
 		<label>File Csv</label>	

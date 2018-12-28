@@ -25,16 +25,15 @@
 							<th>No</th>
 							<th>City</th>
 							<th>Country</th>
-							<th></th>
-							<th></th>
-							<th></th>
+							<th colspan="2">Action</th>
 						</tr>
 
 						<?php
-							include "koneksiDB.php";
+							include "cons.php";
 							$query = "SELECT * FROM city";
 							$sql = mysqli_query($kon,$query);
 							$no=0;
+
 							while ($row = mysqli_fetch_array($sql)) {
 								$no++;
 						?>
@@ -45,10 +44,7 @@
 
 								<td>
 									 <a href="editCity.php?id=<?php echo $row['idcity'] ?>" title="edit" class="btn btn-warning">Edit</a>
-								</td>
-
-								<td>
-									<a href="deleteCity.php?id=<?php echo $row['idcity'] ?>" title="delete" class="btn btn-danger">Delete</a>
+									 <a href="deleteCity.php?id=<?php echo $row['idcity'] ?>" title="delete" class="btn btn-danger">Delete</a>
 								</td>
 							</tr>
 								<?php
